@@ -95,7 +95,7 @@ bot.on("message", async (msg) => {
         `🌍 *Location:* ${location.name}, ${location.country}\n` +
         `🌡 *Temperature:* ${weather.temp_c}°C\n` +
         `☁ *Condition:* ${weather.condition.text}\n` +
-        `💨 *Wind Speed:* ${weather.wind_speed} km/h\n` +
+        `💨 *Wind Speed:* ${weather.wind_kph} km/h\n` +
         `💧 *Humidity:* ${weather.humidity}%`;
 
       bot.sendMessage(chatId, message, { parse_mode: "HTML" });
