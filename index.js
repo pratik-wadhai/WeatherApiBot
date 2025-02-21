@@ -113,7 +113,7 @@ bot.on("location", async (msg) => {
       "http://api.weatherapi.com/v1/current.json",
       {
         params: {
-          key: WEATHER_API,
+          key: process.env.WEATHER_API,
           q: `${latitude}, ${longitude}`,
         },
       }
